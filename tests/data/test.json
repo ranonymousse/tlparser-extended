@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "status": "OK",
+    "text": "If q implies p, then x must be true.",
+    "logics": [
+      {
+        "type": "INV",
+        "f_latex": "",
+        "f_code": "((q --> p) --> x)",
+        "translation": "self",
+        "reasoning": ""
+      },
+      {
+        "type": "TPTL",
+        "f_latex": "",
+        "f_code": "",
+        "translation": "yes",
+        "reasoning": ""
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "status": "OK",
+    "text": "If p is true, and if q implies p, and if not (q implies p) implies q or s or q implies p, then the statement holds.",
+    "logics": [
+      {
+        "type": "LTL",
+        "f_latex": "",
+        "f_code": "(p and (q --> p) and (not (q --> p) --> (q or s or (q --> p))))",
+        "translation": "self",
+        "reasoning": ""
+      },
+      {
+        "type": "TPTL",
+        "f_latex": "",
+        "f_code": "",
+        "translation": "yes",
+        "reasoning": ""
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "status": "OK",
+    "text": "Globally, if it is true that whenever Close is not true and Start is true, then it holds that either Heat is never true globally or Error is eventually not true.",
+    "logics": [
+      {
+        "type": "LTL",
+        "f_latex": "",
+        "f_code": "",
+        "translation": "no",
+        "reasoning": ""
+      },
+      {
+        "type": "CTLS",
+        "f_latex": "",
+        "f_code": "A(G(((not Close and Start) --> A((G(not Heat) or F(not Error))))))",
+        "translation": "self",
+        "reasoning": ""
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "status": "OK",
+    "text": "Globally, if x is true, u equals 9, and i is less than or equal to 3, then it holds that either y is never true globally or z eventually becomes greater than 5.",
+    "logics": [
+      {
+        "type": "LTL",
+        "f_latex": "",
+        "f_code": "G( (x and (9 == u) and (i < 3)) --> F(not y))",
+        "translation": "self",
+        "reasoning": ""
+      },
+      {
+        "type": "TPTL",
+        "f_latex": "",
+        "f_code": "",
+        "translation": "yes",
+        "reasoning": ""
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "status": "OK",
+    "text": "After 6.4μs of LinkDisable, the system should enter the ErrorWait state in the next step.",
+    "logics": [
+      {
+        "type": "LTL",
+        "f_latex": "E (x.\\text{LinkDisable} \\land x = 6.4 \\mu s) \\rightarrow X(\\text{ErrorWait state})",
+        "f_code": "E(x_LinkDisable and x == 64) --> X(ErrorWait_state)",
+        "translation": "self",
+        "reasoning": ""
+      },
+      {
+        "type": "TPTL",
+        "f_latex": "E (x.\\text{LinkDisable} \\land x = 6.4 \\mu s) \\rightarrow X(\\text{ErrorWait state})",
+        "f_code": "E(x_LinkDisable and x == 64) --> X(ErrorWait_state)",
+        "translation": "yes",
+        "reasoning": ""
+      }
+    ]
+  }
+]

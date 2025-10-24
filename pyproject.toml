@@ -1,0 +1,41 @@
+[project]
+name = "tlparser"
+version = "1.0.0"
+description = "Temporal Logic Parser"
+readme = "README.md"
+authors = [{name = "null"}]
+license = {text = "GPL-3.0-or-later"}
+requires-python = ">=3.10"
+classifiers = [
+    "License :: OSI Approved :: MIT License"
+]
+dependencies = [
+    "click",
+    "pandas",
+    "matplotlib",
+    "networkx",
+    "pyvis",
+    "seaborn",
+    "plotly",
+    "kaleido",
+    "D3Blocks==1.4.9",
+    "setuptools",
+    "pyModelChecking==1.3.3",
+    "lark-parser==0.12.0",
+    "openpyxl==3.1.5"
+]
+
+[project.urls]
+Homepage = "https://github.com/RomanBoegli/tlparser"
+Changelog = "https://github.com/RomanBoegli/tlparser/releases"
+Issues = "https://github.com/RomanBoegli/tlparser/issues"
+CI = "https://github.com/RomanBoegli/tlparser/actions"
+
+[project.scripts]
+tlparser = "tlparser.cli:cli"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages]
+find = { include = ["tlparser"] }
