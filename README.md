@@ -1,7 +1,7 @@
 > *This artifact extends the open-source `tlparser`[^tlparser] to automatically analyze requirements expressed in natural language and support their quality evaluation.*
 > *The codebase was obtained by forking original `tlparser` repository and augmenting it with these features.*
 
-- Direct link to Edge/IoT dataset: [**Dataset.xlsx**](https://github.com/ranonymousse/tlparser-extended/raw/refs/heads/main/data/Edge_IoT/Dataset.xlsx)
+- Direct link to Edge/IoT dataset: [**Dataset.xlsx**](./data/Edge_IoT/Dataset.xlsx)
 
 </br>
 
